@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE glorie PUBLIC "-//GLORIE//GLORIE V1.0//EN" "glorie.dtd">
+<glorie version="1.0" model="Sony corporation:nav-u:v1.00">
+	<format>
+		<datum>tokyo</datum>
+		<unit>degree</unit>
+		<time>2007-10-07T07:58:19+09:00</time>
+	</format>
+	<gpoi>
+		<poi>
+			<point>
+				<pos>
+					<lat>34.602001</lat>
+					<lon>138.227335</lon>
+				</pos>
+			</point>
+			<name>
+				<nb>海鮮なぶら市場</nb>
+			</name>
+		</poi>
+		<category vendor="Sony:nav-u">4:買い物</category>
+		<linkfile>
+			<image href="">
+				<comment>0,38</comment>
+			</image>
+		</linkfile>
+	</gpoi>
+	<format>
+		<datum>tokyo</datum>
+		<unit>degree</unit>
+		<time>2019-10-04T08:00:54+09:00</time>
+	</format>
+	<gpoi>
+		<poi>
+			<point>
+				<pos>
+					<lat>35.114964</lat>
+					<lon>138.843084</lon>
+				</pos>
+			</point>
+			<name>
+				<nb>ららぽーと沼津</nb>
+			</name>
+		</poi>
+		<address>
+			<address-text>静岡県 沼津市 東椎路</address-text>
+		</address>
+		<category vendor="Sony:nav-u">4:買い物</category>
+		<linkfile>
+			<image href="">
+				<comment>0,3</comment>
+			</image>
+		</linkfile>
+	</gpoi>
+</glorie>
+
