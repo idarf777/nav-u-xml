@@ -1,7 +1,7 @@
 # nav-u-xml
 
 ## Overview
-SONYボータブルナビnav-uシリーズ(NV-U75VT, etc)のユーザ登録地点をCSVに変換して出力する。
+SONYポータブルナビnav-uシリーズ(NV-U75VT, etc)のユーザ登録地点をCSVに変換して出力する。
 
 [NaviCon](https://play.google.com/store/apps/details?id=jp.co.denso.navicon.view)で取り込む用のZIPファイルを出力可能なので、Android端末があればNaviCon経由でnav-uから別のナビに登録地点を転送できる。
 
