@@ -48,8 +48,8 @@ python ./main.py mark_export.xml -zip out.zip
    - [File](https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files)等のファイラーアプリでout.zipを「共有」し、共有先にNaviConを選択する。
 
 
-**Warning**
-ここではNaviConおよびその操作方法については関知いたしません。
+>**Warning**
+>ここではNaviConの動作および操作方法については関知いたしません。
 
 
 ## Author
