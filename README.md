@@ -3,7 +3,7 @@
 ## Overview
 SONYポータブルナビnav-uシリーズ(NV-U75VT, etc)のユーザ登録地点をCSVに変換して出力する。
 
-[NaviCon](https://play.google.com/store/apps/details?id=jp.co.denso.navicon.view)で取り込む用のZIPファイルを出力可能なので、Android端末があればNaviCon経由でnav-uから別のナビに登録地点を転送できる。
+[NaviCon](https://play.google.com/store/apps/details?id=jp.co.denso.navicon.view)で取り込む用のZIPファイルを出力可能なので、AndroidまたはiOS端末があれば、NaviCon経由でnav-uから別のナビに登録地点を転送できる。
 
 ### Requirements
 
@@ -19,7 +19,7 @@ SONYポータブルナビnav-uシリーズ(NV-U75VT, etc)のユーザ登録地�
 ### 単一のCSVに出力
 
 ````
-python ./main.py mark_export.xml
+python ./nav-u-xml.py mark_export.xml --csv
 ````
 
 次のような出力を得る。緯度経度は世界測地系である。
@@ -34,10 +34,10 @@ Category,Latitude,Longitude,Name
 ### NaviCon用ZIPファイルに出力
 
 ````
-python ./main.py mark_export.xml -zip out.zip
+python ./nav-u-xml.py mark_export.xml --zipfile out.zip
 ````
 
-#### ZIPファイルの取り込み
+#### NaviConへのZIPファイルの取り込み
 
 1. ZIPファイルを端末に転送
 
@@ -50,6 +50,25 @@ python ./main.py mark_export.xml -zip out.zip
 
 >**Warning**
 >ここではNaviConの動作および操作方法については関知いたしません。
+
+
+### MapFanにブックマークを登録する 
+
+MapFanユーザID = mpuser, パスワード = aaabbbccc の場合
+````
+python ./nav-u-xml.py mark_export.xml --mapfan mpuser,aaabbbccc 
+````
+
+>**Warning**
+>MapFan無料会員だと住所変換とか正しく動かないかもしれません。
+>MapFan APIの仕様変更等については関知いたしません。 
+
+
+### 特定のカテゴリ名だけを対象にする
+
+````
+python ./nav-u-xml.py mark_export.xml --csv --category "買い物"
+````
 
 
 ## Author

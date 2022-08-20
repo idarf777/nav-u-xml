@@ -98,7 +98,7 @@ def main():
     # parser.add_argument('-i', '--int-data', type=int, default=0, help='')
     # parser.add_argument('-b', '--bool-data', action='store_true', help='')
     # parser.add_argument('-c', '--counter', type=int, const=50, nargs='?', help='')
-    parser.add_argument('--mapfan', help='MapFanのブックマークを登録する (MapFan会員ID,パスワードをカンマ区切りで指定する)')
+    parser.add_argument('--mapfan', help='MapFanにブックマークを登録する (MapFan会員ID,パスワードをカンマ区切りで指定する)')
     parser.add_argument('--category', help='特定のカテゴリ名だけを対象にする')
     parser.add_argument('--zipfile', help='NaviConで読み込む用のZIPファイルを生成する (ファイルパスを指定する)')
     parser.add_argument('--csv', action='store_true', help='CSVをstdoutに出力する')
